@@ -35,6 +35,7 @@
             this.update_path = new System.Windows.Forms.Button();
             this.update_startup_true = new System.Windows.Forms.Button();
             this.update_startup_false = new System.Windows.Forms.Button();
+            this.exe_start = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,11 +101,22 @@
             this.update_startup_false.UseVisualStyleBackColor = true;
             this.update_startup_false.Click += new System.EventHandler(this.update_startup_false_Click);
             // 
+            // exe_start
+            // 
+            this.exe_start.Location = new System.Drawing.Point(14, 152);
+            this.exe_start.Name = "exe_start";
+            this.exe_start.Size = new System.Drawing.Size(378, 38);
+            this.exe_start.TabIndex = 7;
+            this.exe_start.Text = "アプリを起動する（バックグラウンドで動作します）";
+            this.exe_start.UseVisualStyleBackColor = true;
+            this.exe_start.Click += new System.EventHandler(this.exe_start_Click);
+            // 
             // ecd_settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 157);
+            this.ClientSize = new System.Drawing.Size(399, 202);
+            this.Controls.Add(this.exe_start);
             this.Controls.Add(this.update_startup_false);
             this.Controls.Add(this.update_startup_true);
             this.Controls.Add(this.update_path);
@@ -129,6 +141,7 @@
         private System.Windows.Forms.Button update_path;
         private System.Windows.Forms.Button update_startup_true;
         private System.Windows.Forms.Button update_startup_false;
+        private System.Windows.Forms.Button exe_start;
     }
 }
 

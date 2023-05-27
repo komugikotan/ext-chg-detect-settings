@@ -11,6 +11,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace ext_change_detect_settings
 {
@@ -116,6 +117,11 @@ namespace ext_change_detect_settings
             SetValueString("basic", "startup", "false", "data\\info.ini");
             UnregisterStartupApp("Ext-Change-Detect");
             MessageBox.Show("正常に無効化しました。念のため再起動することをお勧めします。");
+        }
+
+        private void exe_start_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"ext-chg-detect.exe");
         }
     }
 }
