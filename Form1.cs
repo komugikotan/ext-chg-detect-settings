@@ -123,5 +123,10 @@ namespace ext_change_detect_settings
         {
             Process.Start(@"ext-chg-detect.exe");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Process.Start("notepad.exe", "LICENSE.txt");
+        }
     }
 }

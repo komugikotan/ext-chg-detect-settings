@@ -36,6 +36,7 @@
             this.update_startup_true = new System.Windows.Forms.Button();
             this.update_startup_false = new System.Windows.Forms.Button();
             this.exe_start = new System.Windows.Forms.Button();
+            this.show_licence_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -111,11 +112,22 @@
             this.exe_start.UseVisualStyleBackColor = true;
             this.exe_start.Click += new System.EventHandler(this.exe_start_Click);
             // 
+            // show_licence_button
+            // 
+            this.show_licence_button.Location = new System.Drawing.Point(14, 196);
+            this.show_licence_button.Name = "show_licence_button";
+            this.show_licence_button.Size = new System.Drawing.Size(378, 38);
+            this.show_licence_button.TabIndex = 8;
+            this.show_licence_button.Text = "Show LICENCES";
+            this.show_licence_button.UseVisualStyleBackColor = true;
+            this.show_licence_button.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ecd_settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 202);
+            this.ClientSize = new System.Drawing.Size(399, 239);
+            this.Controls.Add(this.show_licence_button);
             this.Controls.Add(this.exe_start);
             this.Controls.Add(this.update_startup_false);
             this.Controls.Add(this.update_startup_true);
@@ -142,6 +154,7 @@
         private System.Windows.Forms.Button update_startup_true;
         private System.Windows.Forms.Button update_startup_false;
         private System.Windows.Forms.Button exe_start;
+        private System.Windows.Forms.Button show_licence_button;
     }
 }
 
